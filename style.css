@@ -1,0 +1,19 @@
+/* Stylesheet to style the page */
+
+.body-theme {
+  background-color: yellow;
+  color: blue;
+  padding: 50px;
+}
+
+.day-theme {
+  background-color: white;
+  color: black;
+  padding: 50px;
+}
+
+.night-theme {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
