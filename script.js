@@ -2,7 +2,7 @@
 var darkButton = document.getElementById('night')
 var dayButton = document.getElementById('day')
 var visitCount = document.getElementById('visit-count')
-var count = window.localStorage.getItem('count') || 1
+var count = window.localStorage.getItem('count') || 0
 
 // create functions to set the themes
 function Bright () {
@@ -33,7 +33,7 @@ darkButton.addEventListener('click', Dim)
 dayButton.addEventListener('click', Bright)
 
 // Update visit count in the HTML body
-if (count != null) {
+if (count !== null) {
   count = parseInt(count) + 1
 }
 visitCount.textContent = 'You have visited this page: ' + count + ' times.'
